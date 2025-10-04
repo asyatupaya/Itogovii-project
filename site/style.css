@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+a:link {
+    color: rgb(0, 94, 255);
+}
+a:visited {
+    color: rgb(0, 94, 255);
+}
+
+#container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    @media(orientation: landscape) {
+        width: 60%;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#main {
+    padding-top: 20px;
+}
+
+#using {
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .card {
+        box-shadow: 1px 2px 8px 0px rgba(34, 60, 80, 0.2);
+        width: 100%;
+        background: white;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        margin: 7px 0;
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+        .tec {
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+        .why {
+            font-size: 16px;
+        }
+    }
+}
+
+#up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+}
